@@ -1,7 +1,10 @@
 p = int(input('enter a number:'))
-for i in range(1,p):
-    if p == 1:
-        print("it is not prim number")
-    elif p>1:
-        p % 2 == 0 or p % 3 == 0 or p % 5 ==0
-print(" it is prim number")
+if p>1 :
+    for i in range(2,p):
+        if p%i == 0:
+            print(p, "is not a prime number")
+    
+    else:
+            print(p, "is a prime number")
+
+
